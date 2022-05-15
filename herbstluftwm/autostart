@@ -185,5 +185,9 @@ done
 # autostart progs
 (autorun_application "firefox")
 
-compton &
+#compton &
+picom --experimental-backend -b &
+volumeicon &
+polybar example &
+setxkbmap -layout gb &
 nitrogen --restore
