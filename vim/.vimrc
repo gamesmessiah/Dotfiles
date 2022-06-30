@@ -1,6 +1,12 @@
 set nocompatible
-filetype off
+syntax on
 set spell
+set relativenumber
+filetype off
+
+
+set omnifunc=htmlcomplete#CompleteTags
+
 
 set rtp+=~/.vim/Vundle.vim
 call vundle#begin()
@@ -12,8 +18,5 @@ Plugin 'preservim/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-syntax on
-set relativenumber
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
 
