@@ -2,6 +2,7 @@ set nocompatible
 filetype off
 
 syntax on
+set termguicolors
 set relativenumber
 set spell
 set hlsearch
