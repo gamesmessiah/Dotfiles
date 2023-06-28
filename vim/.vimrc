@@ -37,4 +37,13 @@ Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
+" Statusline at the bottom of each vim window.
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" colorschemes
+Plug 'rafi/awesome-vim-colorschemes'
+
+" draculatheme
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
