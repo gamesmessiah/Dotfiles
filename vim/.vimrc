@@ -11,6 +11,9 @@ set relativenumber
 set spell
 set spelllang=en_gb
 
+" enable tab find
+set path=.,,**
+
 " search highlighting
 set hlsearch
 
