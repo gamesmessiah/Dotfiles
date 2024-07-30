@@ -4,6 +4,9 @@ filetype off
 " syntax specific highlighting
 syntax on
 
+"Highlight current column"                                                                                                                                                                 
+set cursorcolumn
+
 " number changes according to the line
 set relativenumber
 
