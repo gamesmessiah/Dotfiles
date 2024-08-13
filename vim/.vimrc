@@ -37,6 +37,8 @@ set omnifunc=csscomplete#CompleteCSS
 call plug#begin('~/.vim/plugged' )
 
 " HTML 
+" Press CTRL+y
+" Press ,
 Plug 'mattn/emmet-vim'
 
 " On-demand loading
