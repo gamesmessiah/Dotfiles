@@ -26,10 +26,6 @@ set incsearch
 " search case sensitive
 set ignorecase
 
-" fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
 " enables both filetype detection and filetype plugins
 filetype plugin on
 
@@ -59,3 +55,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 " draculatheme
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
+
+" fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
