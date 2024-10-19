@@ -4,7 +4,7 @@ filetype off
 " syntax specific highlighting
 syntax on
 
-"Highlight current column"                                                                                                                                                                 
+" Highlight current column"                                                                                                                                                                 
 set cursorcolumn
 
 " number changes according to the line
@@ -25,6 +25,10 @@ set incsearch
 
 " search case sensitive
 set ignorecase
+
+" fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " enables both filetype detection and filetype plugins
 filetype plugin on
