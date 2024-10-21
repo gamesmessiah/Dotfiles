@@ -1,11 +1,14 @@
 set nocompatible
 filetype off
 
+"Highlight current line"
+set cursorline 
+
+"Highlight current column"
+set cursorcolumn 
+
 " syntax specific highlighting
 syntax on
-
-" Highlight current column"                                                                                                                                                                 
-set cursorcolumn
 
 " number changes according to the line
 set relativenumber
@@ -14,7 +17,7 @@ set relativenumber
 set spell
 set spelllang=en_gb
 
-" enable tab find
+" enable tab find 
 set path=.,,**
 
 " search highlighting
@@ -33,6 +36,8 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set omnifunc=htmlcomplete#CompleteTags
 set omnifunc=csscomplete#CompleteCSS
+set omnifunc=javascriptcomplete#CompleteJS
+set omnifunc=phpcomplete#CompletePHP
 
 call plug#begin('~/.vim/plugged' )
 
@@ -40,6 +45,10 @@ call plug#begin('~/.vim/plugged' )
 " Press CTRL+y
 " Press ,
 Plug 'mattn/emmet-vim'
+
+" fzf Search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " On-demand loading
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -54,8 +63,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 
 " draculatheme
 Plug 'dracula/vim', { 'as': 'dracula' }
+
+Plug 'SuneelFreimuth/vim-gemtext'
 call plug#end()
 
-" fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
