@@ -116,12 +116,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
-// autostart
-static const char *const autostart[] = {
-	"feh", "--bg-scale", "/home/cameron/Pictures/Beach.jpg", NULL,
-	"killall", "dunst", NULL,
-	"type", "dunst", "&&", "dunst", NULL, /* only launch dunst if the binary exists */
-	"slstatus", NULL,
-	NULL
-};
