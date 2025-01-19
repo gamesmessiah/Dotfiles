@@ -27,7 +27,7 @@ conky.text = [[
     {"full_text": " | ", "color":"\#f8f8f2"},
     {"full_text": " ${time %A %d-%m-%Y}", "color":"\#8BE9FD"},
     {"full_text": " | ", "color":"\#f8f8f2"},
-    {"full_text": "🔋 Battery: ${execi 60 sysctl -n hw.acpi.battery.life}% ", "color":"\#50fa7b"}
+    {"full_text": " Battery: ${execi 60 sysctl -n hw.acpi.battery.life}% ", "color":"\#50fa7b"}
 ],
 
 ]];
