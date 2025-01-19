@@ -23,10 +23,11 @@ conky.text = [[
     {"full_text": " | ", "color":"\#f8f8f2"},
     {"full_text": " UP: ${uptime_short} ", "color":"\#bd93f9"},
     {"full_text": " | ", "color":"\#f8f8f2"},
-    {"full_text": " ${time %H:%M}", "color":"\#f8f8f2"},
+    {"full_text": " ${time %H:%M}", "color":"\#FF79C6"},
     {"full_text": " | ", "color":"\#f8f8f2"},
-    {"full_text": " ${time %A %d-%m-%Y}", "color":"\#f8f8f2"}
-
+    {"full_text": " ${time %A %d-%m-%Y}", "color":"\#8BE9FD"},
+    {"full_text": " | ", "color":"\#f8f8f2"},
+    {"full_text": "🔋 Battery: ${execi 60 sysctl -n hw.acpi.battery.life}% ", "color":"\#50fa7b"}
 ],
 
 ]];
