@@ -13,13 +13,15 @@ conky.config = {
 conky.text = [[
 
 [
+    {"full_text": " ${exec hostname }", "color":"\#f1fa8c"},
+    {"full_text": " | ", "color":"\#f8f8f2"},
     {"full_text": " CPU: ${cpu cpu0}% ", "color":"\#ff5555"},
     {"full_text": " | ", "color":"\#f8f8f2"},
-    {"full_text": " RAM: $mem","color":"\#ffb86c"},
+    {"full_text": " RAM: $mem", "color":"\#ffb86c"},
     {"full_text": " | ", "color":"\#f8f8f2"},
-    {"full_text": " WiFi: ${addr wlan0}","color":"\#50fa7b"},                                                        
+    {"full_text": " WiFi: ${addr wlan0}", "color":"\#50fa7b"},
     {"full_text": " | ", "color":"\#f8f8f2"},
-    {"full_text": " ${exec hostname }", "color":"\#f1fa8c"},
+    {"full_text": " Ethernet IP: ${addr em0}", "color":"\#8BE9FD"},
     {"full_text": " | ", "color":"\#f8f8f2"},
     {"full_text": " UP: ${uptime_short} ", "color":"\#bd93f9"},
     {"full_text": " | ", "color":"\#f8f8f2"},
@@ -29,5 +31,4 @@ conky.text = [[
     {"full_text": " | ", "color":"\#f8f8f2"},
     {"full_text": " Battery: ${execi 60 sysctl -n hw.acpi.battery.life}% ", "color":"\#50fa7b"}
 ],
-
-]];
+]]
