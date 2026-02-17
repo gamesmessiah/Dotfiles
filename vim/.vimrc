@@ -64,6 +64,9 @@ Plug 'rafi/awesome-vim-colorschemes'
 " draculatheme
 Plug 'dracula/vim', { 'as': 'dracula' }
 
+" Automatically show Vim's complete menu while typing.
+Plug 'vim-scripts/AutoComplPop'
+
 Plug 'SuneelFreimuth/vim-gemtext'
 call plug#end()
 
